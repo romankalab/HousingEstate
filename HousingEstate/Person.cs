@@ -6,17 +6,15 @@ namespace HousingEstate
 {
     class Person
     {
-        public Person(string name, string surname, int age, int reference)
+        public Person(string name, string surname, int age)
         {
             Name = name;
             Surname = surname;
             Age = age;
-            Reference = reference;
         }
 
         public string Name { get; }
         public string Surname { get; }
         public int Age { get; }
-        public int Reference { get; }
     }
 }

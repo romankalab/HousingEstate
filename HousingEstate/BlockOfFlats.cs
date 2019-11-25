@@ -6,13 +6,13 @@ namespace HousingEstate
 {
     class BlockOfFlats
     {
-        public BlockOfFlats(int registernumber, Entrance[] entrancelist)
+        public BlockOfFlats(int registerNumber)
         {
-            RegisterNumber = registernumber;
-            EntranceList = entrancelist;
+            RegisterNumber = registerNumber;
+            EntranceList = new List<Entrance>();
         }
 
         public int RegisterNumber { get; }
-        public Entrance[] EntranceList { get; }
+        public List<Entrance> EntranceList { get; }
     }
 }

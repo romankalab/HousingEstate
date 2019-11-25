@@ -6,15 +6,13 @@ namespace HousingEstate
 {
     class Flat
     {
-        public Flat(int number, List<Person> peoplelist, int entrance)
+        public Flat(int number)
         {
             Number = number;
-            PeopleList = peoplelist;
-            Entrance = entrance;
+            People = new List<Person>();
         }
 
         public int Number { get; }
-        public List<Person> PeopleList { get; set; }
-        public int Entrance { get; }
+        public List<Person> People { get; set; }
     }
 }

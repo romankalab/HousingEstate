@@ -6,15 +6,13 @@ namespace HousingEstate
 {
     class Entrance
     {
-        public Entrance(int orientationnumber, Flat[,] flatlist, int blockofflats)
+        public Entrance(int orientationNumber)
         {
-            OrientationNumber = orientationnumber;
-            FlatList = flatlist;
-            BlockOfFlats = blockofflats;
+            OrientationNumber = orientationNumber;
+            FlatList = new List<Flat>();
         }
 
         public int OrientationNumber { get; }
-        public Flat[,] FlatList { get; }
-        public int BlockOfFlats { get; }
+        public List<Flat> FlatList { get; }
     }
 }
